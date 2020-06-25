@@ -10,6 +10,8 @@ const ComponentsScreen = () => {
   // or we can create assign the react value to const and render in JSX
   const wishes = <Text> Its a great day!! Have fun </Text>;
 
+  const name = "Bhanu Prakash Kandregula";
+
   // style will also work with: style={{ fontSize: 30 }}
   return (
     <View>
@@ -17,6 +19,7 @@ const ComponentsScreen = () => {
       <Text style={styles.textStyle}>Ji Bhajarangabali</Text>
       <Text>{greetings}</Text>
       {wishes}
+      <Text style={styles.subHeaderStyle}>My name is {name}</Text>
     </View>
   );
 };
@@ -25,6 +28,7 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 18,
   },
+  subHeaderStyle: {},
 });
 
 export default ComponentsScreen;
