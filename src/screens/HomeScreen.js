@@ -47,6 +47,14 @@ const HomeScreen = (props) => {
         }}
       />
 
+      <Button
+        title="Square Color Screen"
+        onPress={() => {
+          //console.log("Button pressed");
+          props.navigation.navigate("SquareScreen");
+        }}
+      />
+
       <TouchableOpacity
         onPress={() => {
           console.log("List Pressed");
